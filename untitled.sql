@@ -61,7 +61,7 @@ INSERT IGNORE INTO gvp_database.vehicule (nom, image, prix, annee, kilometrage, 
 
 CREATE TABLE IF NOT EXISTS gvp_database.avis (
     nom VARCHAR(30),
-    note JSON,
+    note TINYINT,
     message TEXT,
     estValide BOOLEAN
 );

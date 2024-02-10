@@ -49,13 +49,13 @@ require_once("includes/dbh.inc.php");
             </div>
             <div class="section-footer">
                 <div class="heading lgrey">Navigation</div>
-                <a href="https://localhost/ECF_Website/">Accueil</a>
+                <a href="https://localhost/ECF_Garage_V-Parrot/">Accueil</a>
                 <br>
-                <a href="https://localhost/ECF_Website/vehicules-occasion.php">
+                <a href="https://localhost/ECF_Garage_V-Parrot/vehicules-occasion.php">
                     Véhicules d'occasion à vendre
                 </a>
                 <br>
-                <a href="https://localhost/ECF_Website/laisser-un-avis.php">Laisser un avis</a>
+                <a href="https://localhost/ECF_Garage_V-Parrot/laisser-un-avis.php">Laisser un avis</a>
             </div>
         </div>
         <div class="col-sm">
