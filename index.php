@@ -3,6 +3,7 @@
 session_start();
 
 try {
+    require_once('vendor/autoload.php');
     require_once "includes/dbh.inc.php";
 
     $query1 = "SELECT contenu FROM gvp_database.services WHERE id = 1;";
