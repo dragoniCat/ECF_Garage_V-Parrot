@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 function get_email(string $email) {
 
-    $query = "SELECT * FROM gvp_database.utilisateurs WHERE email = :email;";
+    $query = "SELECT * FROM '".$database."'.utilisateurs WHERE email = :email;";
     $stmt = db()->prepare($query);
     $stmt->bindParam(":email", $email);
     $stmt->execute();

@@ -2,8 +2,8 @@
 try {
     require_once "dbh.inc.php";
 
-    $query1 = "SELECT * FROM gvp_database.avis WHERE estValide = true;";
-    $query2 = "SELECT * FROM gvp_database.avis WHERE estValide = false OR estValide IS NULL;";
+    $query1 = "SELECT * FROM '".$database."'.avis WHERE estValide = true;";
+    $query2 = "SELECT * FROM '".$database."'.avis WHERE estValide = false OR estValide IS NULL;";
 
     $stmt1 = db()->prepare($query1);
     $stmt2 = db()->prepare($query2);

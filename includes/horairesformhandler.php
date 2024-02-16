@@ -14,13 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "dbh.inc.php";
 
         $query = 
-            "INSERT INTO gvp_database.horaires (jour) VALUES ('Lundi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Mardi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Mercredi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Jeudi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Vendredi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Samedi') ON DUPLICATE KEY UPDATE horaire=?;
-            INSERT INTO gvp_database.horaires (jour) VALUES ('Dimanche') ON DUPLICATE KEY UPDATE horaire=?;
+            "INSERT INTO '".$database."'.horaires (jour) VALUES ('Lundi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Mardi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Mercredi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Jeudi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Vendredi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Samedi') ON DUPLICATE KEY UPDATE horaire=?;
+            INSERT INTO '".$database."'.horaires (jour) VALUES ('Dimanche') ON DUPLICATE KEY UPDATE horaire=?;
         ";
 
         $stmt = $pdo->prepare($query);

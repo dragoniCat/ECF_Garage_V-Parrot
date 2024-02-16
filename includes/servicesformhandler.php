@@ -9,9 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         require_once "dbh.inc.php";
 
-        $query = "INSERT INTO gvp_database.services (id) VALUES ('1') ON DUPLICATE KEY UPDATE contenu=?;
-            INSERT INTO gvp_database.services (id) VALUES ('2') ON DUPLICATE KEY UPDATE contenu=?;
-            INSERT INTO gvp_database.services (id) VALUES ('3') ON DUPLICATE KEY UPDATE contenu=?;";
+        $query = "INSERT INTO '".$database."'.services (id) VALUES ('1') ON DUPLICATE KEY UPDATE contenu=?;
+            INSERT INTO '".$database."'.services (id) VALUES ('2') ON DUPLICATE KEY UPDATE contenu=?;
+            INSERT INTO '".$database."'.services (id) VALUES ('3') ON DUPLICATE KEY UPDATE contenu=?;";
 
         $stmt = $pdo->prepare($query);
 

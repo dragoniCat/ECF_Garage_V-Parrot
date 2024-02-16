@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             require_once "dbh.inc.php";
 
             $query = 
-            "INSERT INTO gvp_database.avis (nom, note, message) 
+            "INSERT INTO '".$database."'.avis (nom, note, message) 
             VALUES (?, ?, ?);";
 
             $stmt = $pdo->prepare($query);
