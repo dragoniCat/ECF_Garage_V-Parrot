@@ -16,7 +16,8 @@ try {
 
 // const DB_HOST = 'localhost';
 const DB_HOST = 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-const DB_NAME = 'auth';
+// const DB_NAME = 'auth';
+const DB_NAME = 'qui5aafu163l1ogs';
 // const DB_USER = 'root';
 const DB_USER = 'edmb7232dcik47yq';
 // const DB_PASSWORD = '';
