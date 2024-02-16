@@ -58,7 +58,7 @@ function db(): PDO {
 function db(): PDO {
     static $pdo;
 
-    if (!pdo) {
+    if (!$pdo) {
         $pdo = new PDO(
             sprintf("mysql:host=$hostname;dbname=$database", $hostname, $database),
             $dbusername,
