@@ -11,7 +11,7 @@ $minimum_age = $_POST["minimum_age"];
 $maximum_age = $_POST["maximum_age"];
 
 if(isset($_POST["action"])) {
-    $query = "SELECT * FROM '".$database."'.vehicule WHERE 1";
+    $query = "SELECT * FROM ".$database.".vehicule WHERE 1";
 
     if(isset($_POST["minimum_km"], $_POST["maximum_km"]) && !empty($_POST["minimum_km"]) 
         && !empty($_POST["maximum_km"]))

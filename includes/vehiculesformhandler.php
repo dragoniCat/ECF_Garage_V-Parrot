@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "dbh.inc.php";
 
         $query = 
-            "INSERT INTO '".$database."'.vehicule (nom, prix, annee, kilometrage, carburant, image) 
+            "INSERT INTO ".$database.".vehicule (nom, prix, annee, kilometrage, carburant, image) 
             VALUES (?, ?, ?, ?, ?, ?); 
         ";
 

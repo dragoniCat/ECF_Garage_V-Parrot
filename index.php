@@ -5,9 +5,9 @@ session_start();
 try {
     require_once "includes/dbh.inc.php";
 
-    $query1 = "SELECT contenu FROM '".$database."'.services WHERE id = 1;";
-    $query2 = "SELECT contenu FROM '".$database."'.services WHERE id = 2;";
-    $query3 = "SELECT contenu FROM '".$database."'.services WHERE id = 3;";
+    $query1 = "SELECT contenu FROM ".$database.".services WHERE id = 1;";
+    $query2 = "SELECT contenu FROM ".$database.".services WHERE id = 2;";
+    $query3 = "SELECT contenu FROM ".$database.".services WHERE id = 3;";
 
     $stmt1 = $pdo->prepare($query1);
     $stmt2 = $pdo->prepare($query2);

@@ -4,7 +4,7 @@ $avis = htmlspecialchars($_POST["avis"]);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = "DELETE FROM '".$database."'.avis WHERE nom=:nom;";
+    $query = "DELETE FROM ".$database.".avis WHERE nom=:nom;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(':nom', $avis, PDO::PARAM_STR);
 
