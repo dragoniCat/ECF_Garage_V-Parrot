@@ -43,7 +43,7 @@ function db(): PDO {
 // $DATABASE = ltrim($dbparts['path'],'/');
 
 $JAWSDB_URL = "mysql://edmb7232dcik47yq:n1et8n8ejgqivqqc@d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/qui5aafu163l1ogs";
-$DB_PORT = "3306";
+$DB_PORT = 3306;
 
 $DB_HOST = "d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
 $DB_USERNAME = "edmb7232dcik47yq";
