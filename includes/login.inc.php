@@ -39,14 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["user_prenom"] = $user["prenom"];
 
             if ($user["id"] == 1) {
-                header("Location: ./admin.php");
+                header("Location: ../admin.php");
             } else {
-                header("Location: ./employe.php");
+                header("Location: ../employe.php");
             }
         } else {
             $errors['login'] = 'E-mail ou mot de passe incorrect.';
             $_SESSION["loginError"] = $errors;
-            header("Location: ./login.php");
+            header("Location: ../login.php");
         }
 
     } catch (PDOException $e) {
