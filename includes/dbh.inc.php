@@ -51,7 +51,7 @@ $DB_PASSWORD = "n1et8n8ejgqivqqc";
 $DATABASE = "qui5aafu163l1ogs";
 
 try {
-    $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DATABASE", $DB_USERNAME, $DB_PASSWORD);
+    $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DATABASE;port=$DB_PORT", $DB_USERNAME, $DB_PASSWORD);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e) {
@@ -63,7 +63,7 @@ function db(): PDO {
 
     if (!$pdo) {
         $pdo = new PDO(
-            sprintf("mysql:host=$DB_HOST;dbname=$DATABASE", $DB_HOST, $DATABASE),
+            sprintf("mysql:host=$DB_HOST;dbname=$DATABASE;port=$DB_PORT", $DB_HOST, $DATABASE),
             $DB_USERNAME,
             $DB_PASSWORD,
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
