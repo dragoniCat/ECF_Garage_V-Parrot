@@ -63,9 +63,9 @@ function db(): PDO {
 
     if (!$pdo) {
         $pdo = new PDO(
-            sprintf("mysql:host=$DB_HOST;dbname=$DATABASE;port=$DB_PORT", $DB_HOST, $DATABASE),
-            $DB_USERNAME,
-            $DB_PASSWORD,
+            sprintf("mysql:host=d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;dbname=qui5aafu163l1ogs;port=3306", DB_HOST, DATABASE),
+            DB_USERNAME,
+            DB_PASSWORD,
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
         );
     }
