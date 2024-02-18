@@ -37,13 +37,13 @@ function db(): PDO {
 $url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$dbusername = $dbparts['user'];
-$dbpassword = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
+$DB_HOST = $dbparts['host'];
+$DB_USERNAME = $dbparts['user'];
+$DB_PASSWORD = $dbparts['pass'];
+$DATABASE = ltrim($dbparts['path'],'/');
 
 try {
-    $pdo = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
+    $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DATABASE", $DB_USERNAME, $DB_PASSWORD);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e) {
@@ -55,9 +55,9 @@ function db(): PDO {
 
     if (!$pdo) {
         $pdo = new PDO(
-            sprintf("mysql:host=$hostname;dbname=$database", $hostname, $database),
-            $dbusername,
-            $dbpassword,
+            sprintf("mysql:host=$DB_HOST;dbname=$DATABASE", $DB_HOST, $DATABASE),
+            $DB_USERNAME,
+            $DB_PASSWORD,
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
         );
     }
