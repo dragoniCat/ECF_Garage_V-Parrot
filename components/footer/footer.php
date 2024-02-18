@@ -1,13 +1,13 @@
 <?php
 require_once("includes/dbh.inc.php");
 
-    $query1 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Lundi';";
-    $query2 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Mardi';";
-    $query3 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Mercredi';";
-    $query4 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Jeudi';";
-    $query5 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Vendredi';";
-    $query6 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Samedi';";
-    $query7 = "SELECT horaire FROM ".$database.".horaires WHERE jour = 'Dimanche';";
+    $query1 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Lundi';";
+    $query2 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Mardi';";
+    $query3 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Mercredi';";
+    $query4 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Jeudi';";
+    $query5 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Vendredi';";
+    $query6 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Samedi';";
+    $query7 = "SELECT horaire FROM ".$DATABASE.".horaires WHERE jour = 'Dimanche';";
 
     $stmt1 = $pdo->prepare($query1);
     $stmt2 = $pdo->prepare($query2);

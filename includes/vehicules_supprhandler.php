@@ -4,7 +4,7 @@ $offre = htmlspecialchars($_POST["offre"]);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = "DELETE FROM ".$database.".vehicule WHERE nom=:nom;";
+    $query = "DELETE FROM ".$DATABASE.".vehicule WHERE nom=:nom;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(':nom', $offre, PDO::PARAM_STR);
 

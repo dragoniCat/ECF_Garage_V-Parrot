@@ -2,7 +2,7 @@
 try {
     require_once "dbh.inc.php";
 
-    $query = "SELECT * FROM ".$database.".vehicule;";
+    $query = "SELECT * FROM ".$DATABASE.".vehicule;";
     $stmt = db()->prepare($query);
     $stmt->execute();
 
@@ -13,14 +13,14 @@ try {
 
     // Kilométrage ---------------------------------------------------------------------------------
 
-    $maxKmQuery = "SELECT MAX(kilometrage) FROM ".$database.".vehicule;";
+    $maxKmQuery = "SELECT MAX(kilometrage) FROM ".$DATABASE.".vehicule;";
     $maxKmStmt = db()->prepare($maxKmQuery);
     $maxKmStmt->execute();
 
     $maxKm = $maxKmStmt->fetchColumn();
     $maxKm = (int)$maxKm;
 
-    $minKmQuery = "SELECT MIN(kilometrage) FROM ".$database.".vehicule;";
+    $minKmQuery = "SELECT MIN(kilometrage) FROM ".$DATABASE.".vehicule;";
     $minKmStmt = db()->prepare($minKmQuery);
     $minKmStmt->execute();
 
@@ -29,14 +29,14 @@ try {
 
     // Prix ----------------------------------------------------------------------------------------
 
-    $maxPrixQuery = "SELECT MAX(prix) FROM ".$database.".vehicule;";
+    $maxPrixQuery = "SELECT MAX(prix) FROM ".$DATABASE.".vehicule;";
     $maxPrixStmt = db()->prepare($maxPrixQuery);
     $maxPrixStmt->execute();
 
     $maxPrix = $maxPrixStmt->fetchColumn();
     $maxPrix = (int)$maxPrix;
 
-    $minPrixQuery = "SELECT MIN(prix) FROM ".$database.".vehicule;";
+    $minPrixQuery = "SELECT MIN(prix) FROM ".$DATABASE.".vehicule;";
     $minPrixStmt = db()->prepare($minPrixQuery);
     $minPrixStmt->execute();
 
@@ -45,14 +45,14 @@ try {
 
     // Années --------------------------------------------------------------------------------------
 
-    $maxAgeQuery = "SELECT MAX(annee) FROM ".$database.".vehicule;";
+    $maxAgeQuery = "SELECT MAX(annee) FROM ".$DATABASE.".vehicule;";
     $maxAgeStmt = db()->prepare($maxAgeQuery);
     $maxAgeStmt->execute();
 
     $maxAge = $maxAgeStmt->fetchColumn();
     $maxAge = (int)$maxAge;
 
-    $minAgeQuery = "SELECT MIN(annee) FROM ".$database.".vehicule;";
+    $minAgeQuery = "SELECT MIN(annee) FROM ".$DATABASE.".vehicule;";
     $minAgeStmt = db()->prepare($minAgeQuery);
     $minAgeStmt->execute();
 

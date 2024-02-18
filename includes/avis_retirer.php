@@ -4,7 +4,7 @@ $avisPublique = htmlspecialchars($_POST["avisPublique"]);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = "UPDATE ".$database.".avis SET estValide = 0 WHERE nom=:nom;";
+    $query = "UPDATE ".$DATABASE.".avis SET estValide = 0 WHERE nom=:nom;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(':nom', $avisPublique, PDO::PARAM_STR);
 
