@@ -34,13 +34,20 @@ function db(): PDO {
 }
 */
 
-$url = getenv('JAWSDB_URL');
-$dbparts = parse_url($url);
+// $url = getenv('JAWSDB_URL');
+// $dbparts = parse_url($url);
 
-$DB_HOST = $dbparts['host'];
-$DB_USERNAME = $dbparts['user'];
-$DB_PASSWORD = $dbparts['pass'];
-$DATABASE = ltrim($dbparts['path'],'/');
+// $DB_HOST = $dbparts['host'];
+// $DB_USERNAME = $dbparts['user'];
+// $DB_PASSWORD = $dbparts['pass'];
+// $DATABASE = ltrim($dbparts['path'],'/');
+
+$url = "mysql://edmb7232dcik47yq:n1et8n8ejgqivqqc@d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/qui5aafu163l1ogs";
+
+$DB_HOST = "d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
+$DB_USERNAME = "edmb7232dcik47yq";
+$DB_PASSWORD = "n1et8n8ejgqivqqc";
+$DATABASE = "qui5aafu163l1ogs";
 
 try {
     $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DATABASE", $DB_USERNAME, $DB_PASSWORD);
