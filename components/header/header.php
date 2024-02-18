@@ -3,17 +3,17 @@
 <header id="header" class="d-none d-lg-block">
     <div class="row">
         <div class="col-8">
-            <a href="https://localhost/ECF_Garage_V-Parrot/" class="lien-accueil">
+            <a href="/index.php" class="lien-accueil">
                 Accueil
             </a>
         </div>
         <div class="col">
-            <a href="https://localhost/ECF_Garage_V-Parrot/vehicules-occasion.php">
+            <a href="/vehicules-occasion.php">
                 Véhicules d'occasion à vendre
             </a>
         </div>
         <div class="col">
-            <a href="https://localhost/ECF_Garage_V-Parrot/laisser-un-avis.php">
+            <a href="/laisser-un-avis.php">
                 Laisser un avis
             </a>
         </div>
@@ -40,15 +40,15 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://localhost/ECF_Garage_V-Parrot/">Accueil</a>
+                    <a class="nav-link" href="/index.php">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://localhost/ECF_Garage_V-Parrot/vehicules-occasion.php">
+                    <a class="nav-link" href="/vehicules-occasion.php">
                         Véhicules d'occasion à vendre
                     </a>
                 </li>
                 <li class="nax-item">
-                    <a class="nav-link" href="https://localhost/ECF_Garage_V-Parrot/laisser-un-avis.php">
+                    <a class="nav-link" href="/laisser-un-avis.php">
                         Laisser un avis
                     </a>
                 </li>
