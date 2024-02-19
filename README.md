@@ -3,8 +3,6 @@
 
 ## [Login](https://ecf-v-parrot-59b9dd8ce789.herokuapp.com/login.php)
 
-## Accéder à l'espace employé
-
 # Faire fonctionner en local
 
 ## 1. Télécharger [XAMPP](https://www.apachefriends.org/download.html)
