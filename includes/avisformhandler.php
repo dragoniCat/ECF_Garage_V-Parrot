@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST["message"]);
 
     try {
-        require_once __DIR__ . '\avisformerrors.php';
+        require_once __DIR__ . '/avisformerrors.php';
 
         if (!$errors) {
             require_once "dbh.inc.php";
